@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+   
+  }
+  
+  html::-webkit-scrollbar{
+    width: .8rem;
+  }
+  html::-webkit-scrollbar-thumb{
+    background-color:#d3ad7f;
+    border-radius: .5rem;
+  }
+  html::-webkit-scrollbar-track{
+    background: white;
+  }
+   /* heading properties */
+  .heading {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    text-transform: uppercase;
+    color: black;
+  }
+  
+  .heading span {
+    color: #d3ad7f;
+    text-transform: uppercase;
+  }
+  /* button properties */
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background: #d3ad7f;
+    cursor: pointer;
+    
+  }
+  .btn:hover{
+    background-color: white;
+    color: black;
+    border:1px solid #d3ad7f ;
+  }
+
+  /* header properties starts */
+  .header {
+  
+    display: flex;
+           align-items: center;
+            justify-content: space-between;
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+  .header #menu{
+    font-size: 30px;
+    display: none;
+  }
+  
+  .header .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .header .logo img {
+    width: 100%;
+  }
+  
+  .header .navbar {
+    margin: 10px 0;
+  }
+  
+  .header .navbar a {
+    padding: 10px 15px;
+    font-size: 20px;
+    color:black;
+  }
+  
+  .header .navbar  #nav-close {
+    display: none;
+    font-size: 25px;
+  }
+  
+  .header .navbar a:hover {
+    color: #d3ad7f;
+    border-bottom: 2px solid #d3ad7f;
+  }
+  /* header properties ends */
+  
+  /* home section starts */
+  .home {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)) ,url("./images/home-bg.jpg") no-repeat ;
+    background-size: cover;
+    display: flex;
+            align-items: center;
+            justify-content: flex-start;
+    height: 100vh;
+    color: white;
+  }
+  
+  .home .content {
+    max-width: 800px;
+    padding: 50px 100px;
+  }
+  
+  .home .content h1 {
+    font-size: 50px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  .home .content p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  
+  
+  /* about section starts */
+  .about .row {
+
+    display: grid;
+        border: 1px solid rgba(0,0,0,0.1);
+        margin: 0 50px;
+      grid-template-columns:   repeat(auto-fit, minmax(12rem, 1fr));
+  }
+  
+  .about .row  .img {
+    width: 100%;
+    height: 100%;
+  }
+  .about .row .column {
+ 
+    padding: 30px 40px;
+    color:black;
+    box-sizing: 8px 8px  rgba(0,0,0,0.1);
+    padding-top: 100px;
+  }
+  
+  .about .row .column h3 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  
+  .about .row .column p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .about .row .column .btn {
+    font-size: 15px;
+  }
+  
+  
+/* blog section starts */
+   .blog{
+    margin: 40px 50px;
+   }
+  
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+    gap: 40px;
+}
+   .blogs .card{
+    padding: 20px 0;
+    padding: 10px 10px;
+  }
+  .blogs .card:hover{
+    border: 2px solid rgba(0,0,0,0.1);
+    box-sizing: 0 0.5rem 0.5rem rgba(0,0,0,0.1);
+  }
+ 
+  
+  .blogs .card h3 {
+    font-size: 18px;
+    color: black;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .blogs .card p {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 10px;
+    text-align: left;
+  }
+  
+  .blogs .card .image {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+  }
+  .blogs .card .image:hover{
+    filter: brightness(0.7);
+  }
+  
+  .blogs .card .image img {
+    width: 100%;
+    height: 100%;
+       object-fit: cover;
+  }
+  
+  .blogs .card .image .tag {
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .blogs .card .image .tag span {
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    max-width: fit-content;
+  }
+  
+  .blogs .card .image .tag span i {
+    color:  #d3ad7f;
+    font-size: 15px;
+    margin: 5px;
+  }
+  /* blog section ends */
+  
+/* footer section starts */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.829);
+    padding: 40px 40px;
+  }
+  
+  .footer .box-container {
+  
+    display: grid;
+    
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    padding: 0 30px;
+  }
+  
+  .footer .box-container .box {
+  
+            align-items: center;
+            color: white;
+      }
+  
+  .footer .box-container .box h3 {
+    font-size: 20px;
+    border-bottom: 25px;
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: #d3ad7f;
+  }
+  .credit{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .credit h1{
+    color: white;
+  }
+  
+  /* footer section ends */
+  
+  
+  /* media Quries starts */
+ 
+ 
+  @media (max-width: 950px) {
+    .navbar {
+      position: absolute;
+      top: 80%;
+      right: 100%;
+      min-width: 100%;
+      text-align: center;
+      background-color: white;
+      padding: 50px 0;
+      border: 1px solid rgba(0,0,0,0.2);
+    }
+    .navbar #nav-close {
+      display: block !important;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .navbar #nav-close:hover {
+      color: #d3ad7f;
+    }
+    .navbar a {
+      display: block;
+      color: black !important;
+    }
+    .navbar a:hover {
+      border: 0.1rem solid rgba(255, 255, 255, 0.3);
+      background-color: #d3ad7f;
+    }
+    .navbar.active {
+      right: 0;
+    }
+    .header #menu {
+      display: block!important;
+    }
+    
+   
+  }
+  
+  @media(max-width:750px){
+    .about .row{
+      display: block;
+    }
+  }
+
+  
